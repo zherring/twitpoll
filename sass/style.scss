@@ -33,13 +33,20 @@ body {
 	
 	#add-project {
 			position: fixed;
-			background: #DDD;
+			background: mix(#EEE, $tBlue, 85%);
 			top: 0;
-			width: 10em;
+			width: 9em;
 			padding: 1em 0;
 			text-align: center;
-			color: $tBlue;
-			box-shadow: 0 0 5px rgba(0,0,0,.2)
+			color: darken($tBlue, 10%);
+			text-decoration: none;
+			box-shadow: 0 0 2px rgba(0,0,0,.2);
+			//text-shadow: 0 1px 0 #fff;
+			
+			&:hover {
+				background: mix($tBlue, #FFF, 5%);
+				color: darken($tBlue, 10%);
+				}
 			} 
 
 	#project-list {
@@ -56,11 +63,18 @@ body {
 				display: block;
 				border-bottom: #eee 1px solid;
 				color: $tBlue;
+				text-decoration: none;
+				font-size: .8em;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				&:hover {
+					background: #EDEDED;
+					color: lighten($tBlue, 10%);
+				}
+
 			}
 			
-			a:hover {
-				background: #eee;
-			}
 			
 		}
 	}
@@ -71,9 +85,11 @@ body {
 	bottom: 0;
 	top: 0;
 	right: 0;
-	left: 10em;
+	left: 9em;
 	position: absolute;
 	text-align: center;
+	background: $tBlue;
+	z-index: 100;
 
 	article, #project-controls {
 		background: #FFFFFF;
@@ -84,6 +100,11 @@ body {
 		padding: 5%;
 		margin-top: 2em;
 		}
+		
+	textarea {
+		width: 90%;
+		text-align: left;
+	}
 		
 	#project-controls {
 		border-radius: 5px;

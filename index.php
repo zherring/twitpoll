@@ -11,7 +11,7 @@
 		<aside id="project_nav">
 			<nav class="left">
 	
-				<a id="add-project" href="#"><i class="icon-plus-sign"></i> Create New Poll</a>
+				<a id="add-project" href="#"><i class="icon-plus-sign"></i> Create</a>
 		
 				<ul id="project-list">			
 					<?php for($i = 0; $i < 20; $i++) {?>
@@ -25,14 +25,12 @@
 		<section id="project_palette">
 			<article id="project-options">
 				<form>
-				<h2>Poll Title</h2>
+				<h2>Poll Title <i class="icon-edit"></i></h2>
 				
 				<input class="display-none" type="text">
 				
 				<h3>Twitter Poll Question</h3>
-				<textarea>
-					Description Here
-				</textarea>
+				<textarea></textarea>
 				
 				<h3>Possible Answers</h3>
 				<ul>

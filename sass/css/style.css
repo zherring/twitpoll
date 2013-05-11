@@ -25,13 +25,17 @@ body {
   top: 3em; }
   #project_nav #add-project {
     position: fixed;
-    background: #DDD;
+    background: #d6e0e8;
     top: 0;
-    width: 10em;
+    width: 9em;
     padding: 1em 0;
     text-align: center;
-    color: #4f91c7;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+    color: #3777ac;
+    text-decoration: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+    #project_nav #add-project:hover {
+      background: #f6f9fc;
+      color: #3777ac; }
   #project_nav #project-list {
     list-style: none;
     margin: 0;
@@ -44,17 +48,25 @@ body {
         padding: 1em;
         display: block;
         border-bottom: #eeeeee 1px solid;
-        color: #4f91c7; }
-      #project_nav #project-list li a:hover {
-        background: #eee; }
+        color: #4f91c7;
+        text-decoration: none;
+        font-size: .8em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        #project_nav #project-list li a:hover {
+          background: #EDEDED;
+          color: #76a9d3; }
 
 #project_palette {
   bottom: 0;
   top: 0;
   right: 0;
-  left: 10em;
+  left: 9em;
   position: absolute;
   text-align: center;
+  background: #4f91c7;
+  z-index: 100;
   /*
   	#project-controls {
   		position: absolute;
@@ -75,6 +87,9 @@ body {
     margin: 0 auto;
     padding: 5%;
     margin-top: 2em; }
+  #project_palette textarea {
+    width: 90%;
+    text-align: left; }
   #project_palette #project-controls {
     border-radius: 5px;
     background: #a7c8e3;
