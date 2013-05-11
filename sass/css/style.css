@@ -32,7 +32,7 @@ body {
     text-align: center;
     color: #4f91c7;
     text-decoration: none;
-    border-bottom: 1px solid #bbbbbb;
+    border-bottom: 1px solid #9cc1e0;
     box-shadow: inset 0 0 1px white; }
     #project_nav #add-project:hover {
       background: #f6f9fc;
@@ -81,6 +81,16 @@ body {
   		text-align: center;
   	}
   */ }
+  #project_palette h1, #project_palette h2, #project_palette h3 {
+    color: #4a8b71; }
+    #project_palette h1 i, #project_palette h2 i, #project_palette h3 i {
+      /*
+      			color: lighten($lGreen, 50%);
+      			//text-shadow: 0 0 1px darken($dGreen, 10%);
+      			padding: .25em .3em .25em .4em;
+      			@include gradient($lGreen,$dGreen, $dGreen);
+      			border-radius: 10px;
+      */ }
   #project_palette article, #project_palette #project-controls {
     background: #FFFFFF;
     width: 80%;

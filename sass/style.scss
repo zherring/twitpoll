@@ -1,4 +1,18 @@
 $tBlue: #4F91C7;
+$lGreen: #98D289;
+$dGreen: #4A8B71;
+
+@mixin gradient($from, $to, $fallback) {
+    background: $to;
+    background: url($fallback);
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+    background: -o-linear-gradient(top, $from 0%,$to 100%);
+    background: -ms-linear-gradient(top, $from 0%,$to 100%);
+    background: linear-gradient(to bottom, $from 0%,$to 100%);
+}
+
 
 html, body
 {
@@ -42,7 +56,7 @@ body {
 			text-decoration: none;
 			//box-shadow: 0 0 2px rgba(0,0,0,.2);
 			//text-shadow: 0 1px 0 #fff;
-			border-bottom: 1px solid #BBB;
+			border-bottom: 1px solid lighten($tBlue, 20%);
 			box-shadow: inset 0 0 1px #FFF;
 			
 			&:hover {
@@ -93,6 +107,20 @@ body {
 	text-align: center;
 	background: $tBlue;
 	z-index: 100;
+	
+	h1, h2, h3 {
+		color: $dGreen;
+		
+		i {
+/*
+			color: lighten($lGreen, 50%);
+			//text-shadow: 0 0 1px darken($dGreen, 10%);
+			padding: .25em .3em .25em .4em;
+			@include gradient($lGreen,$dGreen, $dGreen);
+			border-radius: 10px;
+*/
+		}
+	}
 
 	article, #project-controls {
 		background: #FFFFFF;
