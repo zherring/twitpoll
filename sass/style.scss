@@ -33,19 +33,22 @@ body {
 	
 	#add-project {
 			position: fixed;
-			background: mix(#EEE, $tBlue, 85%);
+			background: #DDD;
 			top: 0;
 			width: 9em;
 			padding: 1em 0;
 			text-align: center;
-			color: darken($tBlue, 10%);
+			color: $tBlue;
 			text-decoration: none;
-			box-shadow: 0 0 2px rgba(0,0,0,.2);
+			//box-shadow: 0 0 2px rgba(0,0,0,.2);
 			//text-shadow: 0 1px 0 #fff;
+			border-bottom: 1px solid #BBB;
+			box-shadow: inset 0 0 1px #FFF;
 			
 			&:hover {
 				background: mix($tBlue, #FFF, 5%);
 				color: darken($tBlue, 10%);
+				border-bottom-color: lighten($tBlue, 20%) ;
 				}
 			} 
 
