@@ -36,10 +36,12 @@
 				<h3>Possible Answers</h3>
 				<ul id="project-answers">
 					<li>
-						Poll Answer 2
+						1. Poll Answer 
+						<i class="float-right icon-edit icon-large"></i>
 					</li>
 					<li>
-						Poll Answer 2
+						2. Poll Answer
+						<i class="float-right icon-edit icon-large"></i>
 					</li>
 				</ul>
 				</form>
@@ -49,7 +51,11 @@
 				Reporting Output Here
 			</article>
 			<nav id="project-controls">
-				Test
+				<aside class="float-left">
+					<em>Project Status:</em>
+					<strong class="launched">Launched</strong>
+				</aside>
+				<button class="float-right" type="submit">Save</button>
 			</nav>
 	
 		</section>	

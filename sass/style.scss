@@ -28,9 +28,14 @@ body {
 	font-size: 100%;
 }
 
-.display-none {
-	display: none;
-}
+
+//UTIL CLASSES
+.display-none {display: none;}
+
+.float-left {float: left;}
+.float-right {float: right;}
+
+//LAYOUT CLASSES
 
 #project_nav {
 	position: absolute;
@@ -129,11 +134,32 @@ body {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		border: 3px dashed #DEDEDE;
+		background: #eee;
+		border-radius: 5px;
+
 		li {
-		margin: 0;
-		padding: 0;
+			margin: 0;
+			padding: 1em .5em;
+			border-bottom: 3px dashed #DEDEDE;
+			font-style: italic;
+			color: #888;
 			
+			&:last-child{
+				border-bottom: none transparent;
 			}
+
+			i {
+				color: #AAA;
+				opacity: .5;
+				cursor: pointer;
+				
+				&:hover {
+					opacity: 1;
+					color: $tBlue;
+				}
+			}
+		}
 	}
 	
 	article, #project-controls {
@@ -141,22 +167,31 @@ body {
 		width: 80%;
 		box-shadow: 0 0 10px rgba(0,0,0,.2);
 		text-align: left;
-		margin: 0 auto;
-		padding: 5%;
+		padding: 1.3em;
 		margin-top: 2em;
+		margin-left: 2em;
 		}
 		
 	textarea {
 		width: 90%;
 		text-align: left;
+		height: 10em;
+		background: darken(#fff, 1%);
+		border-radius: 5px;
+		border: #BBB solid 1px;
 	}
 		
 	#project-controls {
 		border-radius: 5px;
 		background: mix($tBlue, #FFFFFF);
-		padding: 2% 5%;
+		padding: .7em 1.3em;
+		overflow: hidden;
 		
 		//border: 1px solid #AAA;
+		
+		.launched {
+			color: $dGreen;
+		}
 	}
 	
 /*
