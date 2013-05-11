@@ -51,6 +51,7 @@ body {
 			a {
 				padding: 1em;
 				display: block;
+				border-bottom: #eee 1px solid;
 			}
 			
 			a:hover {
@@ -70,7 +71,7 @@ body {
 	position: absolute;
 	text-align: center;
 
-	article {
+	article, #project-controls {
 		background: #FFFFFF;
 		width: 80%;
 		box-shadow: 0 0 10px rgba(0,0,0,.2);
@@ -79,7 +80,15 @@ body {
 		padding: 1em;
 		margin-top: 2em;
 		}
+		
+	#project-controls {
+		border-radius: 5px;
+		box-shadow: 0 0 0 transparent;
+		background: #DDD;
+		border: 1px solid #AAA;
+	}
 	
+/*
 	#project-controls {
 		position: absolute;
 		bottom: 0;
@@ -90,4 +99,5 @@ body {
 		padding: .5em 0;
 		text-align: center;
 	}
+*/
 }

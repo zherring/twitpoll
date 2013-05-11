@@ -40,7 +40,8 @@ body {
       text-align: center; }
       #project_nav #project-list li a {
         padding: 1em;
-        display: block; }
+        display: block;
+        border-bottom: #eeeeee 1px solid; }
       #project_nav #project-list li a:hover {
         background: #eee; }
 
@@ -50,8 +51,20 @@ body {
   right: 0;
   left: 10em;
   position: absolute;
-  text-align: center; }
-  #project_palette article {
+  text-align: center;
+  /*
+  	#project-controls {
+  		position: absolute;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		background: #333;
+  		color: #fff;
+  		padding: .5em 0;
+  		text-align: center;
+  	}
+  */ }
+  #project_palette article, #project_palette #project-controls {
     background: #FFFFFF;
     width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -60,11 +73,7 @@ body {
     padding: 1em;
     margin-top: 2em; }
   #project_palette #project-controls {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #333;
-    color: #fff;
-    padding: 0.5em 0;
-    text-align: center; }
+    border-radius: 5px;
+    box-shadow: 0 0 0 transparent;
+    background: #DDD;
+    border: 1px solid #aaaaaa; }
