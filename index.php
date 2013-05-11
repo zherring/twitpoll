@@ -3,7 +3,7 @@
 	<title>TwitPoll</title>
 	<link href="/sass/css/style.css" media="all" rel="stylesheet" type="text/css">
 	<link href="/sass/css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/jquery.js"></script>
 
 	</head>
 	
@@ -53,22 +53,18 @@
 			</nav>
 	
 		</section>	
-	
+
+
+		<script>
+if (jQuery) {  
+				console.log("Hey! Here!");
+
+    // jQuery is not loaded  
+} else {
+				console.log("I got it! I got it! I got it! ...don't got it.");
+    // jQuery is loaded
+}		</script>
+
 	</body>
 	
-	<script type="javascript">
-		$(document).ready(function(){ 
-		
-			alert("Working!");
-/*
-			if (jQuery) {  
-			    alert("working!");
-			    // jQuery is loaded  
-			} else {
-			    // jQuery is not loaded
-			}
-*/
-		});
-		
-	</script>
 </html>
