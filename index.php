@@ -60,12 +60,14 @@
 		$(document).ready(function(){ 
 		
 			alert("Working!");
+/*
 			if (jQuery) {  
 			    alert("working!");
 			    // jQuery is loaded  
 			} else {
 			    // jQuery is not loaded
 			}
+*/
 		});
 		
 	</script>

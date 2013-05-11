@@ -47,22 +47,23 @@ body {
 	
 	#add-project {
 			position: fixed;
-			background: #DDD;
+			background: $dGreen;
+			@include gradient($lGreen,lighten($dGreen, 10%), $dGreen);
 			top: 0;
 			width: 9em;
 			padding: 1em 0;
 			text-align: center;
-			color: $tBlue;
+			color: #FFF;
 			text-decoration: none;
-			//box-shadow: 0 0 2px rgba(0,0,0,.2);
+			box-shadow: 0 0 2px rgba($dGreen,.7);
 			//text-shadow: 0 1px 0 #fff;
-			border-bottom: 1px solid lighten($tBlue, 20%);
-			box-shadow: inset 0 0 1px #FFF;
+			border-bottom: 1px solid $dGreen;
+			border-top: 1px solid $dGreen;
 			
 			&:hover {
-				background: mix($tBlue, #FFF, 5%);
-				color: darken($tBlue, 10%);
-				border-bottom-color: lighten($tBlue, 20%) ;
+				background: mix($lGreen, #FFF, 5%);
+				color: darken($dGreen, 10%);
+				border-bottom-color: lighten($dGreen, 20%) ;
 				}
 			} 
 
@@ -77,8 +78,9 @@ body {
 			text-align: center;
 			a {
 				padding: 1em;
+				background: #EDEDED;
 				display: block;
-				border-bottom: #eee 1px solid;
+				border-bottom: #FFF 1px solid;
 				color: $tBlue;
 				text-decoration: none;
 				font-size: .8em;
@@ -86,8 +88,8 @@ body {
 				overflow: hidden;
 				text-overflow: ellipsis;
 				&:hover {
-					background: #EDEDED;
 					color: lighten($tBlue, 10%);
+					background: #FFF;
 				}
 
 			}

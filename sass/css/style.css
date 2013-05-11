@@ -25,19 +25,28 @@ body {
   top: 3em; }
   #project_nav #add-project {
     position: fixed;
-    background: #DDD;
+    background: #4a8b71;
+    background: #5eaa8c;
+    background: url(#4a8b71);
+    background: -moz-linear-gradient(top, #98d289 0%, #5eaa8c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #98d289), color-stop(100%, #5eaa8c));
+    background: -webkit-linear-gradient(top, #98d289 0%, #5eaa8c 100%);
+    background: -o-linear-gradient(top, #98d289 0%, #5eaa8c 100%);
+    background: -ms-linear-gradient(top, #98d289 0%, #5eaa8c 100%);
+    background: linear-gradient(to bottom, #98d289 0%, #5eaa8c 100%);
     top: 0;
     width: 9em;
     padding: 1em 0;
     text-align: center;
-    color: #4f91c7;
+    color: #FFF;
     text-decoration: none;
-    border-bottom: 1px solid #9cc1e0;
-    box-shadow: inset 0 0 1px white; }
+    box-shadow: 0 0 2px rgba(74, 139, 113, 0.7);
+    border-bottom: 1px solid #4a8b71;
+    border-top: 1px solid #4a8b71; }
     #project_nav #add-project:hover {
-      background: #f6f9fc;
-      color: #3777ac;
-      border-bottom-color: #9cc1e0; }
+      background: #f9fcf9;
+      color: #386a56;
+      border-bottom-color: #80bba3; }
   #project_nav #project-list {
     list-style: none;
     margin: 0;
@@ -48,8 +57,9 @@ body {
       text-align: center; }
       #project_nav #project-list li a {
         padding: 1em;
+        background: #EDEDED;
         display: block;
-        border-bottom: #eeeeee 1px solid;
+        border-bottom: white 1px solid;
         color: #4f91c7;
         text-decoration: none;
         font-size: .8em;
@@ -57,8 +67,8 @@ body {
         overflow: hidden;
         text-overflow: ellipsis; }
         #project_nav #project-list li a:hover {
-          background: #EDEDED;
-          color: #76a9d3; }
+          color: #76a9d3;
+          background: #FFF; }
 
 #project_palette {
   bottom: 0;
