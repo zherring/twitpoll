@@ -1,0 +1,93 @@
+html, body
+{
+    height: 100%;
+}
+
+body {
+	background: #EEE;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	font-family: helvetica, arial, san-serif;
+	font-size: 100%;
+}
+
+.display-none {
+	display: none;
+}
+
+#project_nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 10em;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+	overflow-x: auto;
+	display: block;
+	top: 3em;
+	
+	
+	#add-project {
+			position: fixed;
+			background: #DDD;
+			top: 0;
+			width: 10em;
+			padding: 1em 0;
+			text-align: center;
+			
+			} 
+
+	#project-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow-x: auto;
+		
+		li {
+			display: block;
+			text-align: center;
+			a {
+				padding: 1em;
+				display: block;
+			}
+			
+			a:hover {
+				background: #eee;
+			}
+			
+		}
+	}
+	
+}
+
+#project_palette {
+	bottom: 0;
+	top: 0;
+	right: 0;
+	left: 10em;
+	position: absolute;
+	text-align: center;
+
+	article {
+		background: #FFFFFF;
+		width: 80%;
+		box-shadow: 0 0 10px rgba(0,0,0,.2);
+		text-align: left;
+		margin: 0 auto;
+		padding: 1em;
+		margin-top: 2em;
+		}
+	
+	#project-controls {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #333;
+		color: #fff;
+		padding: .5em 0;
+		text-align: center;
+	}
+}
