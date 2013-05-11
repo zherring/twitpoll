@@ -1,10 +1,12 @@
+$tBlue: #4F91C7;
+
 html, body
 {
     height: 100%;
 }
 
 body {
-	background: #EEE;
+	background: $tBlue;
 	position: relative;
 	padding: 0;
 	margin: 0;
@@ -36,7 +38,8 @@ body {
 			width: 10em;
 			padding: 1em 0;
 			text-align: center;
-			
+			color: $tBlue;
+			box-shadow: 0 0 5px rgba(0,0,0,.2)
 			} 
 
 	#project-list {
@@ -52,6 +55,7 @@ body {
 				padding: 1em;
 				display: block;
 				border-bottom: #eee 1px solid;
+				color: $tBlue;
 			}
 			
 			a:hover {
@@ -77,15 +81,16 @@ body {
 		box-shadow: 0 0 10px rgba(0,0,0,.2);
 		text-align: left;
 		margin: 0 auto;
-		padding: 1em;
+		padding: 5%;
 		margin-top: 2em;
 		}
 		
 	#project-controls {
 		border-radius: 5px;
-		box-shadow: 0 0 0 transparent;
-		background: #DDD;
-		border: 1px solid #AAA;
+		background: mix($tBlue, #FFFFFF);
+		padding: 2% 5%;
+		
+		//border: 1px solid #AAA;
 	}
 	
 /*

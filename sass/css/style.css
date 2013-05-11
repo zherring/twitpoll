@@ -2,7 +2,7 @@ html, body {
   height: 100%; }
 
 body {
-  background: #EEE;
+  background: #4f91c7;
   position: relative;
   padding: 0;
   margin: 0;
@@ -29,7 +29,9 @@ body {
     top: 0;
     width: 10em;
     padding: 1em 0;
-    text-align: center; }
+    text-align: center;
+    color: #4f91c7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
   #project_nav #project-list {
     list-style: none;
     margin: 0;
@@ -41,7 +43,8 @@ body {
       #project_nav #project-list li a {
         padding: 1em;
         display: block;
-        border-bottom: #eeeeee 1px solid; }
+        border-bottom: #eeeeee 1px solid;
+        color: #4f91c7; }
       #project_nav #project-list li a:hover {
         background: #eee; }
 
@@ -70,10 +73,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: left;
     margin: 0 auto;
-    padding: 1em;
+    padding: 5%;
     margin-top: 2em; }
   #project_palette #project-controls {
     border-radius: 5px;
-    box-shadow: 0 0 0 transparent;
-    background: #DDD;
-    border: 1px solid #aaaaaa; }
+    background: #a7c8e3;
+    padding: 2% 5%; }
