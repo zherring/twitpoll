@@ -78,6 +78,7 @@ body {
 			text-align: center;
 			a {
 				padding: 1em;
+				padding-left: .7em;
 				background: #EDEDED;
 				display: block;
 				border-bottom: #FFF 1px solid;
@@ -100,7 +101,7 @@ body {
 	
 }
 
-#project_palette {
+#project-palette {
 	bottom: 0;
 	top: 0;
 	right: 0;
@@ -123,7 +124,18 @@ body {
 */
 		}
 	}
-
+	
+	#project-answers {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+		margin: 0;
+		padding: 0;
+			
+			}
+	}
+	
 	article, #project-controls {
 		background: #FFFFFF;
 		width: 80%;

@@ -57,6 +57,7 @@ body {
       text-align: center; }
       #project_nav #project-list li a {
         padding: 1em;
+        padding-left: .7em;
         background: #EDEDED;
         display: block;
         border-bottom: white 1px solid;
@@ -70,7 +71,7 @@ body {
           color: #76a9d3;
           background: #FFF; }
 
-#project_palette {
+#project-palette {
   bottom: 0;
   top: 0;
   right: 0;
@@ -91,9 +92,9 @@ body {
   		text-align: center;
   	}
   */ }
-  #project_palette h1, #project_palette h2, #project_palette h3 {
+  #project-palette h1, #project-palette h2, #project-palette h3 {
     color: #4a8b71; }
-    #project_palette h1 i, #project_palette h2 i, #project_palette h3 i {
+    #project-palette h1 i, #project-palette h2 i, #project-palette h3 i {
       /*
       			color: lighten($lGreen, 50%);
       			//text-shadow: 0 0 1px darken($dGreen, 10%);
@@ -101,7 +102,14 @@ body {
       			@include gradient($lGreen,$dGreen, $dGreen);
       			border-radius: 10px;
       */ }
-  #project_palette article, #project_palette #project-controls {
+  #project-palette #project-answers {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #project-palette #project-answers li {
+      margin: 0;
+      padding: 0; }
+  #project-palette article, #project-palette #project-controls {
     background: #FFFFFF;
     width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -109,10 +117,10 @@ body {
     margin: 0 auto;
     padding: 5%;
     margin-top: 2em; }
-  #project_palette textarea {
+  #project-palette textarea {
     width: 90%;
     text-align: left; }
-  #project_palette #project-controls {
+  #project-palette #project-controls {
     border-radius: 5px;
     background: #a7c8e3;
     padding: 2% 5%; }

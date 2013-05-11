@@ -23,7 +23,7 @@
 				</ul>
 			</nav>
 		</aside>
-		<section id="project_palette">
+		<section id="project-palette">
 			<article id="project-options">
 				<form>
 				<h2>Poll Title <i class="icon-edit"></i></h2>
@@ -34,7 +34,7 @@
 				<textarea></textarea>
 				
 				<h3>Possible Answers</h3>
-				<ul>
+				<ul id="project-answers">
 					<li>
 						Poll Answer 2
 					</li>
@@ -56,14 +56,12 @@
 
 
 		<script>
-if (jQuery) {  
-				console.log("Hey! Here!");
-
-    // jQuery is not loaded  
-} else {
-				console.log("I got it! I got it! I got it! ...don't got it.");
-    // jQuery is loaded
-}		</script>
+			
+			$(document).onload(function(){
+				
+			});
+			
+		</script>
 
 	</body>
 	
