@@ -1,3 +1,5 @@
+//MIXINS
+
 $tBlue: #4F91C7;
 $lGreen: #98D289;
 $dGreen: #4A8B71;
@@ -13,6 +15,7 @@ $dGreen: #4A8B71;
     background: linear-gradient(to bottom, $from 0%,$to 100%);
 }
 
+//GENERIC
 
 html, body
 {
@@ -35,7 +38,7 @@ body {
 .float-left {float: left;}
 .float-right {float: right;}
 
-//LAYOUT CLASSES
+//LAYOUT
 
 #project_nav {
 	position: absolute;
@@ -61,7 +64,7 @@ body {
 			color: #FFF;
 			text-decoration: none;
 			box-shadow: 0 0 2px rgba($dGreen,.7);
-			//text-shadow: 0 1px 0 #fff;
+			text-shadow: 1px 1px 0 rgba($dGreen, .7);
 			border-bottom: 1px solid $dGreen;
 			border-top: 1px solid $dGreen;
 			
@@ -118,7 +121,7 @@ body {
 	
 	h1, h2, h3 {
 		color: $dGreen;
-		
+		text-shadow: 1px 1px 0 rgba(#aaa, .2);
 		i {
 /*
 			color: lighten($lGreen, 50%);

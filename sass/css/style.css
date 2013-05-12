@@ -47,6 +47,7 @@ body {
     color: #FFF;
     text-decoration: none;
     box-shadow: 0 0 2px rgba(74, 139, 113, 0.7);
+    text-shadow: 1px 1px 0 rgba(74, 139, 113, 0.7);
     border-bottom: 1px solid #4a8b71;
     border-top: 1px solid #4a8b71; }
     #project_nav #add-project:hover {
@@ -99,7 +100,8 @@ body {
   	}
   */ }
   #project-palette h1, #project-palette h2, #project-palette h3 {
-    color: #4a8b71; }
+    color: #4a8b71;
+    text-shadow: 1px 1px 0 rgba(170, 170, 170, 0.2); }
     #project-palette h1 i, #project-palette h2 i, #project-palette h3 i {
       /*
       			color: lighten($lGreen, 50%);
