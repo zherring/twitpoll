@@ -36,10 +36,10 @@
 				<h3>Possible Answers</h3>
 				<ul id="project-answers">
 					<li>
-						1. Poll Answer <i class="float-r-ight icon-edit icon-large"></i>
+						1. Poll Answer <i class="float-right icon-edit icon-large"></i>
 					</li>
 					<li>
-						2. Poll Answer <i class="float-ri-ght icon-edit icon-large"></i>
+						2. Poll Answer <i class="float-right icon-edit icon-large"></i>
 					</li>
 				</ul>
 				<button id="js-AddAnswer" type="button">+ Add Another</button>
@@ -70,7 +70,7 @@
 					var i = $('#project-answers li').length + 1;
 					console.log(i);
 					
-					$('#project-answers').append('<li>' + i + '. New Poll Answer  <i class="float-ri-ght icon-edit icon-large"></i></li>')
+					$('#project-answers').append('<li>' + i + '. New Poll Answer  <i class="float-right icon-edit icon-large"></i></li>')
 				})
 			});
 			

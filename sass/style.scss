@@ -72,6 +72,7 @@ body {
 				background: mix($lGreen, #FFF, 5%);
 				color: darken($dGreen, 10%);
 				border-bottom-color: lighten($dGreen, 20%) ;
+				text-shadow:none;
 				}
 			} 
 
@@ -118,6 +119,7 @@ body {
 	text-align: center;
 	background: $tBlue;
 	z-index: 100;
+	overflow-x: auto;
 	
 	h1, h2, h3 {
 		color: $dGreen;
