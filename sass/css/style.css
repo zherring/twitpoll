@@ -89,6 +89,9 @@ body {
   background: #4f91c7;
   z-index: 100;
   overflow-x: auto;
+  width: 80%;
+  padding-left: 0em;
+  overflow-y: hidden;
   /*
   	#project-controls {
   		position: absolute;
@@ -136,12 +139,26 @@ body {
           color: #4f91c7; }
   #project-palette article, #project-palette #project-controls {
     background: #FFFFFF;
-    width: 80%;
+    width: 85%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: left;
     padding: 1.3em;
     margin-top: 2em;
-    margin-left: 2em; }
+    margin-left: 2em;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 80%;
+    transition: all 2s;
+    -webkit-transition: all 0.2s;
+    /* Safari */ }
+  #project-palette article {
+    opacity: .65; }
+    #project-palette article.active {
+      opacity: 1;
+      margin: inherit auto;
+      width: 85%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      transform: translateZ(); }
   #project-palette textarea {
     width: 90%;
     text-align: left;

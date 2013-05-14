@@ -24,7 +24,7 @@
 			</nav>
 		</aside>
 		<section id="project-palette">
-			<article id="project-options">
+			<article id="project-options" class="active">
 				<form>
 				<h2>Poll Title <i class="icon-edit"></i></h2>
 				
@@ -71,6 +71,11 @@
 					console.log(i);
 					
 					$('#project-answers').append('<li>' + i + '. New Poll Answer  <i class="float-right icon-edit icon-large"></i></li>')
+				})
+				
+				$('#project-palette article').click(function(){
+					$('article').removeClass('active');
+					$(this).addClass('active');
 				})
 			});
 			
