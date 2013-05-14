@@ -69,7 +69,8 @@ body {
 			border-top: 1px solid $dGreen;
 			
 			&:hover {
-				background: mix($lGreen, #FFF, 5%);
+				//background: mix($lGreen, #FFF, 5%);
+				background:  #fffffa;
 				color: darken($dGreen, 10%);
 				border-bottom-color: lighten($dGreen, 20%) ;
 				text-shadow:none;
@@ -99,7 +100,25 @@ body {
 				text-overflow: ellipsis;
 				&:hover {
 					color: lighten($tBlue, 10%);
-					background: #FFF;
+					background: #fffff3;
+				}
+				&.active {
+					background: lighten($tBlue, 44%);
+					
+/*
+					&:after {
+						content: '';
+						width: 0; 
+						height: 0; 
+						border-top: 19px solid transparent;
+						border-bottom: 19px solid transparent;
+						border-left: 19px solid lighten($tBlue, 44%);
+						position: fixed;
+						left: 11.3em;
+						top: 4em;
+						z-index: 1000;
+						}
+*/
 				}
 
 			}
@@ -123,6 +142,8 @@ body {
 	width: 80%;
 	padding-left: 0em;
 	overflow-y: hidden;
+	border-left: 1px solid darken($tBlue, 25%);
+	box-shadow: inset 5px 0 5px darken($tBlue, 10%);
 	
 	h1, h2, h3 {
 		color: $dGreen;

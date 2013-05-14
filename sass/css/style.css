@@ -51,7 +51,7 @@ body {
     border-bottom: 1px solid #4a8b71;
     border-top: 1px solid #4a8b71; }
     #project_nav #add-project:hover {
-      background: #f9fcf9;
+      background: #fffffa;
       color: #386a56;
       border-bottom-color: #80bba3;
       text-shadow: none; }
@@ -77,7 +77,23 @@ body {
         text-overflow: ellipsis; }
         #project_nav #project-list li a:hover {
           color: #76a9d3;
-          background: #FFF; }
+          background: #fffff3; }
+        #project_nav #project-list li a.active {
+          background: #f9fbfd;
+          /*
+          					&:after {
+          						content: '';
+          						width: 0; 
+          						height: 0; 
+          						border-top: 19px solid transparent;
+          						border-bottom: 19px solid transparent;
+          						border-left: 19px solid lighten($tBlue, 44%);
+          						position: fixed;
+          						left: 11.3em;
+          						top: 4em;
+          						z-index: 1000;
+          						}
+          */ }
 
 #project-palette {
   bottom: 0;
@@ -92,6 +108,8 @@ body {
   width: 80%;
   padding-left: 0em;
   overflow-y: hidden;
+  border-left: 1px solid #244f72;
+  box-shadow: inset 5px 0 5px #3777ac;
   /*
   	#project-controls {
   		position: absolute;

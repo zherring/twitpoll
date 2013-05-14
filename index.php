@@ -14,7 +14,10 @@
 	
 				<a id="add-project" href="#"><i class="icon-plus-sign"></i> Create</a>
 		
-				<ul id="project-list">			
+				<ul id="project-list">	
+					<li>
+						<a href="#" class="active">Poll Title</a>
+					</li>		
 					<?php for($i = 0; $i < 20; $i++) {?>
 						<li>
 							<a href="#">Existing Poll Name <?php echo $i; ?></a>
@@ -30,7 +33,7 @@
 					<span>Poll Title</span>
 					<i class="icon-edit"></i>
 				</h2>
-				<input type="text" class="js-TitleInput display-none">
+				<input type="text" class="js-TitleInput display-none" value="Poll Title">
 				
 				
 				<input class="display-none" type="text">
@@ -69,21 +72,22 @@
 			
 			$(document).ready(function(){
 				
-				$('#js-AddAnswer').click(function(){
+				$('#js-AddAnswer').on('click', function(){
 				
 					var i = $('#project-answers li').length + 1;
 					
 					$('#project-answers').append('<li>' + i + '. New Poll Answer  <i class="float-right icon-edit icon-large"></i></li>')
 				})
 				
-				$('#project-palette article').click(function(){
+				$('#project-palette article').on('click', function(){
 					$('article').removeClass('active');
 					$(this).addClass('active');
 				})
 				
-				$('.js-PollTitle i').click(function(){
+				$('.js-PollTitle i').on('click', function(){
 					$('.js-TitleInput').show();
 					$(this).parent().hide();
+					console.log('hello world');
 				})
 				
 				$('.js-TitleInput').bind('keyup', function(e) {
@@ -98,7 +102,17 @@
 					}
 					
 				});
-			});
+				
+				
+/*
+				
+				$('#add-project').click(function(){
+					$('#project-palette').html('');
+					$('#project-palette').load('/new.php');
+					});
+*/
+				
+				});
 			
 		</script>
 
