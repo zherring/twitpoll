@@ -26,7 +26,12 @@
 		<section id="project-palette">
 			<article id="project-options" class="active">
 				<form>
-				<h2>Poll Title <i class="icon-edit"></i></h2>
+				<h2 class="js-PollTitle">
+					<span>Poll Title</span>
+					<i class="icon-edit"></i>
+				</h2>
+				<input type="text" class="js-TitleInput display-none">
+				
 				
 				<input class="display-none" type="text">
 				
@@ -63,12 +68,10 @@
 		<script>
 			
 			$(document).ready(function(){
-				console.log("Hi");
 				
 				$('#js-AddAnswer').click(function(){
 				
 					var i = $('#project-answers li').length + 1;
-					console.log(i);
 					
 					$('#project-answers').append('<li>' + i + '. New Poll Answer  <i class="float-right icon-edit icon-large"></i></li>')
 				})
@@ -77,6 +80,24 @@
 					$('article').removeClass('active');
 					$(this).addClass('active');
 				})
+				
+				$('.js-PollTitle i').click(function(){
+					$('.js-TitleInput').show();
+					$(this).parent().hide();
+				})
+				
+				$('.js-TitleInput').bind('keyup', function(e) {
+					if(e.keyCode==13) {
+						var titleVal = $('.js-TitleInput').val();
+						var titleHead = $('.js-PollTitle span');
+						e.preventDefault();
+						console.log('titleHead');
+						$(titleHead).html(titleVal);
+						$('.js-TitleInput').hide();
+						$('.js-PollTitle').show();
+					}
+					
+				});
 			});
 			
 		</script>
