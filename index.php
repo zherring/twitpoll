@@ -1,3 +1,20 @@
+<?php
+function db_connect()
+{//localhost -uroot -proot
+	$conn = mysql_connect('localhost:3306','root','root');
+}
+$conn = db_connect();
+mysql_select_db('twitpoll');
+$sql = 'select * from Projects';
+$rs = mysql_query($sql);
+
+$projects = array();
+while($data = mysql_fetch_assoc($rs))
+{
+	$projects[$data['iProjectID']] = $data;
+}
+?>
+
 <html>
 	<head>
 	<title>TwitPoll</title>
@@ -18,28 +35,29 @@
 					<li>
 						<a href="#" class="active">Poll Title</a>
 					</li>		
-					<?php for($i = 0; $i < 20; $i++) {?>
+					<?php foreach($projects as $project) {?>
 						<li>
-							<a href="#">Existing Poll Name <?php echo $i; ?></a>
+							<a href="#"><?php echo $project['sTitle'];?></a>
 						</li>
 					<?php } ?>
 				</ul>
 			</nav>
 		</aside>
+	<form action="/save_project.php" method="post">
 		<section id="project-palette">
 			<article id="project-options" class="active">
-				<form>
+
 				<h2 class="js-PollTitle">
 					<span>Poll Title</span>
 					<i class="icon-edit"></i>
 				</h2>
-				<input type="text" class="js-TitleInput display-none" value="Poll Title">
+				<input type="text" class="js-TitleInput display-none" name="poll-title" value="Poll Title">
 				
 				
 				<input class="display-none" type="text">
 				
 				<h3>Twitter Poll Question</h3>
-				<textarea></textarea>
+				<textarea name="poll-question"></textarea>
 				
 				<h3>Possible Answers</h3>
 				<ul id="project-answers">
@@ -51,7 +69,7 @@
 					</li>
 				</ul>
 				<button id="js-AddAnswer" type="button">+ Add Another</button>
-				</form>
+				
 			</article>
 			
 			<article id="project-reporting">
@@ -62,11 +80,11 @@
 					<em>Project Status:</em>
 					<strong class="launched">Launched</strong>
 				</aside>
-				<button class="float-right" type="submit">Save</button>
+				<input class="float-right" type="submit">Save</button>
 			</nav>
 	
 		</section>	
-
+	</form>
 
 		<script>
 			
