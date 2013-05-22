@@ -51,6 +51,11 @@ body {
 	overflow-x: auto;
 	display: block;
 	top: 3em;
+	-webkit-transition: width 1s ease-out;
+	
+	&:hover {
+		width: 9.4em;
+		}
 	
 	
 	#add-project {
@@ -82,10 +87,11 @@ body {
 		margin: 0;
 		padding: 0;
 		overflow-x: auto;
+		box-shadow: 0 0 10px rgba(0,0,0,.333);
 		
 		li {
 			display: block;
-			text-align: center;
+			text-align: left;
 			a {
 				padding: 1em;
 				padding-left: .7em;
@@ -98,6 +104,7 @@ body {
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
+				width: 9.4em;
 				&:hover {
 					color: lighten($tBlue, 10%);
 					background: #fffff3;

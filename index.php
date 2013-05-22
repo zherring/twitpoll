@@ -32,9 +32,6 @@ while($data = mysql_fetch_assoc($rs))
 				<a id="add-project" href="#"><i class="icon-plus-sign"></i> Create</a>
 		
 				<ul id="project-list">	
-					<li>
-						<a href="#" class="active">Poll Title</a>
-					</li>		
 					<?php foreach($projects as $project) {?>
 						<li>
 							<a href="#"><?php echo $project['sTitle'];?></a>

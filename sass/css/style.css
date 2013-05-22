@@ -28,7 +28,10 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow-x: auto;
   display: block;
-  top: 3em; }
+  top: 3em;
+  -webkit-transition: width 1s ease-out; }
+  #project_nav:hover {
+    width: 9.4em; }
   #project_nav #add-project {
     position: fixed;
     background: #4a8b71;
@@ -59,10 +62,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow-x: auto; }
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.333); }
     #project_nav #project-list li {
       display: block;
-      text-align: center; }
+      text-align: left; }
       #project_nav #project-list li a {
         padding: 1em;
         padding-left: .7em;
@@ -74,7 +78,8 @@ body {
         font-size: .8em;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis; }
+        text-overflow: ellipsis;
+        width: 9.4em; }
         #project_nav #project-list li a:hover {
           color: #76a9d3;
           background: #fffff3; }
